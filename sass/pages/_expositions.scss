@@ -1,0 +1,16 @@
+main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 50px;
+
+    section {
+        width: 50%;
+
+        p {
+            text-align: justify;
+        }
+    }
+}
