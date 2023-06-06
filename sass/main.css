@@ -4,12 +4,16 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 figure {
   width: 100vw;
   height: 70vh;
   z-index: 0;
   position: relative;
-  top: -100px;
+  top: -130px;
   left: 0;
   overflow: hidden;
 }
@@ -24,7 +28,6 @@ figure .imageContainer img {
   position: absolute;
   transform: translate(0, -15%);
   width: 100vw;
-  /* height: 100vh; */
   left: 0;
   top: 0;
 }
@@ -44,7 +47,8 @@ header {
   padding-top: 30px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 30px 15%;
   align-items: center;
   z-index: 2;
 }
@@ -71,7 +75,8 @@ footer {
   padding: 25px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 30px 15%;
 }
 footer .contactGrid {
   display: flex;
@@ -114,4 +119,13 @@ main section {
 }
 main section p {
   text-align: justify;
+}
+
+body .expoCard {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+body .expoCard img {
+  width: 350px;
 }/*# sourceMappingURL=main.css.map */

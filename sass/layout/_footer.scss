@@ -6,7 +6,8 @@ footer {
     padding: 25px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 30px 15%;
 
     .contactGrid {
         display: flex;

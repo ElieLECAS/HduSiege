@@ -3,7 +3,7 @@ figure {
     height: 70vh;
     z-index: 0;
     position: relative;
-    top: -100px;
+    top: -130px;
     left: 0;
     overflow: hidden;
 
@@ -18,7 +18,6 @@ figure {
             position: absolute;
             transform: translate(0, -15%);
             width: 100vw;
-            /* height: 100vh; */
             left: 0;
             top: 0;
         }
