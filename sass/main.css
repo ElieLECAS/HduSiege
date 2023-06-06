@@ -121,11 +121,18 @@ main section p {
   text-align: justify;
 }
 
-body .expoCard {
-  width: 300px;
-  height: 200px;
+body .gridArchives {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 350px);
+  gap: 20px;
+}
+body .gridArchives .expoCard {
+  width: 400px;
+  height: 300px;
   overflow: hidden;
 }
-body .expoCard img {
+body .gridArchives .expoCard img {
   width: 350px;
 }/*# sourceMappingURL=main.css.map */
