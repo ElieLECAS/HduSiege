@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    padding-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Image de fond */
+figure {
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+    position: relative;
+    top: -100px;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    width: 100%;
+
+}
+
+.presentationExpo {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+
+.carouselMédiation {
+    margin: auto;
+    width: 80%;
+}
+
+.carousel1 {
+    margin: auto;
+    overflow: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.carouselMédiation img {
+    margin: 50px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+footer {
+    color: white;
+    background-color: #252525;
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.contactGrid {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}
+
+.contactGrid a {
+    color: white;
+}
