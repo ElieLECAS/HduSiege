@@ -53,6 +53,7 @@ header {
   z-index: 2;
 }
 header a {
+  font-size: 20px;
   text-decoration: none;
   color: black;
 }
@@ -119,6 +120,14 @@ main section {
 }
 main section p {
   text-align: justify;
+  font-size: 17px;
+  line-height: 25px;
+}
+main section .textComplet {
+  display: none;
+}
+main section .read-more {
+  text-decoration: underline;
 }
 
 body .gridArchives {

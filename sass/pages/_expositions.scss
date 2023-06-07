@@ -11,6 +11,16 @@ main {
 
         p {
             text-align: justify;
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        .textComplet {
+            display: none;
+        }
+
+        .read-more {
+            text-decoration: underline;
         }
     }
 }
