@@ -8,7 +8,47 @@ body {
   overflow-x: hidden;
 }
 
-figure {
+h2 {
+  margin-bottom: 10px;
+}
+
+figure.accueilFigure {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  position: relative;
+  top: -130px;
+  left: 0;
+  overflow: hidden;
+  margin-bottom: -180px;
+}
+figure.accueilFigure .imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+}
+figure.accueilFigure .imageContainer img {
+  position: absolute;
+  transform: translate(-50%, -15%);
+  height: 150vh;
+  left: 50%;
+  top: 0;
+}
+figure.accueilFigure .imageContainer .evenement {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  color: black;
+}
+figure.accueilFigure .imageContainer .evenement a {
+  text-decoration: none;
+  color: black;
+}
+
+figure.expoFigure {
   width: 100vw;
   height: 70vh;
   z-index: 0;
@@ -17,26 +57,32 @@ figure {
   left: 0;
   overflow: hidden;
 }
-figure .imageContainer {
+figure.expoFigure .imageContainer {
   position: relative;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-figure .imageContainer img {
+figure.expoFigure .imageContainer img {
   position: absolute;
   transform: translate(0, -15%);
   width: 100vw;
-  left: 0;
   top: 0;
+  transition: 0.2s;
 }
-figure .imageContainer .evenement {
+figure.expoFigure .imageContainer img:hover {
+  width: 105vw;
+}
+figure.expoFigure .imageContainer .evenement {
   position: absolute;
   bottom: 10%;
   left: 10%;
 }
-figure .imageContainer .evenement a {
+figure.expoFigure .imageContainer .evenement a {
   text-decoration: none;
   color: black;
 }
@@ -74,17 +120,24 @@ footer {
   color: white;
   background-color: #252525;
   padding: 25px;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   padding: 30px 15%;
+  position: relative;
 }
-footer .contactGrid {
+footer .footerLeft {
+  text-align: left;
+}
+footer .footerCenter {
+  text-align: center;
+}
+footer .footerRight {
   display: flex;
-  flex-flow: row;
-  gap: 20px;
+  flex-flow: column;
+  text-align: right;
 }
-footer .contactGrid a {
+footer .footerRight a {
   color: white;
 }
 
@@ -108,20 +161,18 @@ footer .contactGrid a {
 }
 
 main {
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column;
   gap: 50px;
-}
-main section {
-  width: 50%;
+  padding: 30px 15%;
 }
 main section p {
-  text-align: justify;
+  text-align: left;
   font-size: 17px;
   line-height: 25px;
+}
+main section .extrait {
+  padding-top: 20px;
 }
 main section .textComplet {
   display: none;
@@ -135,13 +186,35 @@ body .gridArchives {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 350px);
-  gap: 20px;
+  gap: 100px;
 }
 body .gridArchives .expoCard {
   width: 400px;
   height: 300px;
   overflow: hidden;
+  position: relative;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .gridArchives .expoCard img {
-  width: 350px;
+  height: 300px;
+  transition: 0.2s;
+}
+body .gridArchives .expoCard p {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+  transform: translate(0%, -50%);
+}
+body .gridArchives .expoCard:hover img {
+  height: 320px;
+  filter: blur(7px);
+}
+body .gridArchives .expoCard:hover p {
+  bottom: 30%;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,45 @@
-figure {
+figure.accueilFigure {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: relative;
+    top: -130px;
+    left: 0;
+    overflow: hidden;
+    margin-bottom: -180px;
+
+    .imageContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        justify-content: center;
+
+        img {
+            // filter: brightness(0.7);
+            position: absolute;
+            transform: translate(-50%, -15%);
+            height: 150vh;
+            left: 50%;
+            top: 0;
+        }
+
+        .evenement {
+            position: absolute;
+            bottom: 10%;
+            left: 15%;
+            color: black;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+figure.expoFigure {
     width: 100vw;
     height: 70vh;
     z-index: 0;
@@ -13,13 +54,21 @@ figure {
         height: 100%;
         top: 0;
         left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             position: absolute;
             transform: translate(0, -15%);
             width: 100vw;
-            left: 0;
             top: 0;
+            transition: .2s;
+        }
+
+        img:hover {
+            width: 105vw;
+
         }
 
         .evenement {

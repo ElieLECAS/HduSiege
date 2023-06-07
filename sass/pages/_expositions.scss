@@ -1,18 +1,24 @@
 main {
-    text-align: center;
+    // text-align: center;
+    // justify-content: center;
+    // align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: column;
     gap: 50px;
+    padding: 30px 15%;
 
     section {
-        width: 50%;
+        // width: 80%;
 
         p {
-            text-align: justify;
+
+            text-align: left;
             font-size: 17px;
             line-height: 25px;
+        }
+
+        .extrait {
+            padding-top: 20px;
         }
 
         .textComplet {
